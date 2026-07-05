@@ -407,7 +407,17 @@ def check_context_size(stream_fn, base_url, model, backend, needed_tokens):
         metrics = stream_fn(base_url, model, messages, max_tokens=5, temperature=0)
         if metrics["output_tokens"] == 0:
             if metrics.get("saw_reasoning"):
-                _print_thinking_error(backend)
+                # Reasoning model: the 5-token probe was entirely consumed by
+                # thinking, so no *visible* output landed — but the request
+                # returned WITHOUT a context-length error, which is the only
+                # thing this pre-flight actually verifies (a too-small context
+                # raises, and that's handled in the except below). Treat as a
+                # pass so thinking models aren't false-failed here. The real
+                # thinking-vs-output budget is exercised by the scenarios, which
+                # allot far more than 5 tokens. (Fix: agents-a1-xl-mlx bring-up,
+                # 2026-07-05 — see results/AUDIT notes.)
+                print(" ok (reasoning model; context accepted).\n")
+                return
             _print_context_error(needed_tokens, backend)
         print(" ok.\n")
     except Exception as e:
