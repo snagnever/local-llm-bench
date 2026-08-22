@@ -643,8 +643,20 @@ def run_scenario(scenario, stream_fn, base_url, model, runs=1, backend="ollama")
                 # ── Send to model and measure ─────────────────────────
                 # The stream function handles the HTTP request, streams
                 # the response, and returns timing metrics.
+                # No-think on GGUF Qwen3.5 reasoning models: there is no external
+                # chat_template.jinja for --no-think to patch and no /no_think soft
+                # switch — the only lever is enable_thinking=false, whose template
+                # emits a pre-closed <think>\n\n</think>. Prefilling that block as a
+                # trailing assistant turn is the exact same tokens. Injected only
+                # into the request (not persistent history) so conversation turns
+                # don't accumulate double assistant messages.
+                call_messages = messages
+                if os.environ.get("BENCH_NOTHINK_PREFILL") == "1":
+                    call_messages = messages + [
+                        {"role": "assistant", "content": "<think>\n\n</think>\n\n"}
+                    ]
                 metrics = stream_fn(
-                    base_url, model, messages,
+                    base_url, model, call_messages,
                     max_tokens=max_tokens, temperature=temperature,
                 )
 

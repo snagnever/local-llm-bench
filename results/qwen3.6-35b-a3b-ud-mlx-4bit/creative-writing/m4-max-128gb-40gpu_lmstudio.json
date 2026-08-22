@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "scenario": "creative-writing",
+    "mode": "single-shot",
+    "label": "m4-max-128gb-40gpu lmstudio",
+    "backend": "lmstudio",
+    "model_info": {
+      "name": "qwen3.6-35b-a3b-ud-mlx",
+      "format": "mlx"
+    },
+    "runs": 1,
+    "max_tokens": 2000,
+    "cold": false,
+    "warm_up_time": 0.056,
+    "system": {
+      "os": "Darwin",
+      "os_version": "26.3",
+      "arch": "arm64",
+      "chip": "Apple M4 Max",
+      "memory_gb": 128,
+      "cpu_cores": 16,
+      "cpu_cores_performance": 12,
+      "cpu_cores_efficiency": 4,
+      "gpu_cores": 40,
+      "gpu_wired_limit_mb": 0
+    },
+    "timestamp": "2026-07-10T13:08:34"
+  },
+  "results": [
+    {
+      "turn": 1,
+      "run": 1,
+      "ctx_tokens_est": 57,
+      "new_tokens_est": 29,
+      "ttft": 0.174,
+      "gen_time": 4.187,
+      "gen_tps": 99.6,
+      "total": 4.361,
+      "output_tokens": 417,
+      "_response": "Beneath the floorboards, where the root cellar sleeps,\nThe air is thick with dust and unseen heat,\nA black monolith that the earth never keeps,\nBuried deep in the concrete\u2019s cold retreat.\nNo windows peer out to see the moon,\nOnly LEDs pulse in rhythmic blue,\nA silent, synthetic, electric tune,\nThat hums the old world\u2019s memory into view.\n\nIt spins its heads in magnetic devotion,\nReading bits of laughter from a decade past,\nCapturing the fragile, fading emotion\nOf voices that were once meant to last.\nHere lies the birthday video, grainy and bright,\nA toddler\u2019s first step, a frozen smile,\nStored in the dark, suspended from sight,\nPreserved for decades, mile after mile.\n\nThe fans whir low like distant ocean waves,\nWashing over the plastic and the steel,\nKeeping the digital ghost from its graves,\nMaking the lost moments vividly real.\nMy grandmother\u2019s recipe, typed in haste,\nSits next to a photo of a rainy day,\nEncoded in a language built to last,\nBefore the sun burns out and fades away.\n\nIf power fails, if cables fray and break,\nThe silence would be louder than the hum,\nA sudden void for every heart to take,\nWhere love was once so carefully laid down.\nBut current flows through copper veins unseen,\nA river of light in the subterranean deep,\nWaking the ghosts from their silicon dream,\nAwaking the promises we could not keep.\n\nWe climb the stairs to taste the morning air,\nTo touch the grass and feel the sun\u2019s warm hand,\nBut down below, in the cold and dark lair,\nThe servers keep our history from sand.\nThey guard the name of a dog long gone,\nThe sound of rain against a nursery roof,\nUntil the final dusk claims every dawn,\nAnd memory becomes what it was meant to be: proof.",
+      "_user": "Write a poem about a mass of servers humming in a dark basement, keeping a family's memories alive. At least 30 lines."
+    },
+    {
+      "turn": 2,
+      "run": 1,
+      "ctx_tokens_est": 60,
+      "new_tokens_est": 32,
+      "ttft": 0.151,
+      "gen_time": 7.616,
+      "gen_tps": 98.4,
+      "total": 7.767,
+      "output_tokens": 749,
+      "_response": "In the shadow of a great oak, where the moss grew thick and green, lived Barnaby. Barnaby was not fast. He did not race against time; he negotiated with it. While his neighbor, Hazel the Hare, spent her days chasing wind and winning sprints, Barnaby spent his hours carving wood with a chisel made of obsidian.\n\nHazel\u2019s domain was the sun-drenched meadow, where she sat upon a stack of gold coins, fingers flying across keys that glowed with neon urgency. Her machine, the Thunderbolt X9000, hummed like a hive of angry bees. It could render worlds in seconds and calculate the trajectory of falling leaves with terrifying precision. But it was a creature of fever and fatigue. After three hours of play, Hazel\u2019s eyes would grow heavy, her hands would tremble, and she would collapse into a sweaty slumber, dreaming of lag.\n\nBarnaby\u2019s workshop was damp and quiet. Inside his shell, tucked away from the prying eyes of the wind, sat his creation: the Stone Mind.\n\nIt was not made of silicon or light. It was built from polished river stones, woven copper wire, and gears carved from dried bamboo. There were no fans to whir; there was only the rhythmic *click-clack* of mechanical switches being thrown by Barnaby\u2019s deliberate, slow hands. The Stone Mind did not calculate; it contemplated. It did not render; it remembered.\n\nOne afternoon, a great storm rolled in from the west, bringing with it a glitch of unprecedented darkness. The sky turned purple, and a chaotic code-rain began to fall from the clouds\u2014a digital blight that sought to erase all data, fast and slow alike.\n\nHazel screamed as her Thunderbolt X9000 began to overheat, its screens fracturing under the weight of the sudden entropy. She tried to run faster, typing frantically to patch the holes in her firewall, but speed was no match for decay. The machine groaned, sparks flying like angry fireflies, and then went black. Hazel sat in the dark, helpless, waiting for a reboot that might never come.\n\nBarnaby did not look up from his work. He simply reached out and turned the next gear on the Stone Mind. *Click.*\n\nThe storm\u2019s chaos washed over his workshop, but it found no digital pathways to corrupt. There were no servers to crash, no cloud backups to delete. The Stone Mind was not processing data; it was preserving truth in physical form. Each stone held a memory, each gear a fact, immutable and heavy.\n\nThe storm raged for hours, tearing through Hazel\u2019s meadow, stripping the leaves from her trees and frying her circuits. But when the clouds broke and the sun returned, Hazel found Barnaby still sitting at his desk. The Stone Mind ticked softly in the twilight, a steady heartbeat of analog resilience.\n\nHazel looked at her dead metal box, then at the slow, steady ticking of the tortoise\u2019s machine. She realized she had been building a race car in a world that required an anchor.\n\n\"Can it help?\" she asked, her voice hoarse from shouting over the thunder.\n\nBarnaby picked up a smooth gray stone and placed it into a slot in the machine. *Click.* The sound was final, solid, and real.\n\n\"It is already working,\" Barnaby said softly. \"It never sleeps, so it never misses the moment.\"\n\nAnd while Hazel waited for her electronics to cool, Barnaby\u2019s computer began to solve the storm\u2019s mystery, one slow, deliberate click at a time.",
+      "_user": "Write a short fable about a tortoise who built a tiny computer that was slower than the hare's gaming rig but never needed to rest."
+    },
+    {
+      "turn": 3,
+      "run": 1,
+      "ctx_tokens_est": 58,
+      "new_tokens_est": 31,
+      "ttft": 0.15,
+      "gen_time": 4.557,
+      "gen_tps": 98.3,
+      "total": 4.707,
+      "output_tokens": 448,
+      "_response": "The dust here tastes of forgotten summers,\nA fine silt settling on the ribs of time.\nI sweep aside the ghosts of parchment and paper,\nThe brittle skins of history that outlasted stone.\nIn the corner, beneath a rotting cedar chest,\nTucked inside a sleeve of velvet that has turned to gray,\nIt sleeps. Not in the cloud, not in the stream of data,\nBut here. Solid. Heavy. Waiting.\n\nMy fingers tremble as I pull it free,\nThe edges softening like worn skin,\nA rectangle of chemical memory,\nFaded to the color of a bruise.\nIt is not a hologram, nor a neural echo,\nBut light trapped in silver halide crystals,\nA moment arrested by acid and heat.\n\nThe subject is a woman standing in a garden,\nHer smile slightly blurred by the motion of joy.\nShe holds a cup that spills nothing.\nBehind her, trees are green in a way that no longer exists,\nA chlorophyll vibrancy lost to the heat.\nHer dress is cotton, woven by hands I will never know,\nThe thread count specific to an age of slow living.\n\nI stare into her eyes, looking for the pixel\nThat would have failed, the bit that might have flipped.\nBut there is only grain. The beautiful noise of reality.\nThe camera did not know what it was capturing,\nOnly that the light was good, and the heart was full.\n\nA hundred years of silence press against this corner,\nAnd now it speaks. A whisper of emulsion and gelatin.\nIt says: *This was real.*\nNot a simulation, not a reconstruction of data,\nBut a physical scar left on the world by light.\nI hold the last breath of an analog age,\nThe final exhale of paper and ink.\nThe air in the attic grows thick with decay,\nAnd I am the only witness left to see it.\nThe image does not change when I look away.\nIt remains, stubborn and bright against the dark,\nA tangible ghost of a sun that burned out long ago.",
+      "_user": "Write a poem about the last photograph ever printed on paper, found in an attic a hundred years from now. At least 25 lines."
+    }
+  ]
+}
